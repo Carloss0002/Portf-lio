@@ -32,6 +32,9 @@
     <div class="container-fluid-lg">
         <Nuxt/>
     </div>
+    <footer>
+        
+    </footer>
   </div>
 </template>
 
@@ -45,7 +48,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
     .topoMenu{
-        background: #1f1f1f;
+        background: #1f1f1fe5;
         border-radius: 0 0 10px 10px;
     }
     a, .nav-link{

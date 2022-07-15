@@ -11,9 +11,16 @@ body{
     width: 437px;
     height: 62px;
 }
+.btn-body{
+   width: 437px;
+   height: 40px;   
+}
 .title{
     font: normal 2.5rem Arial, sans-serif;
 }
 .subtitle{
     font: normal 2rem 'Times New Roman', Times, serif;
+}
+.text{
+   font: normal 1.40rem 'Courier New', Courier, monospace;
 }
