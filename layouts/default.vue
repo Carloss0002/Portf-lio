@@ -49,7 +49,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
     .topoMenu{
         background: #1f1f1fe5;
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 15px 15px;
     }
     a, .nav-link{
         font: normal 1.32rem 'Poppins', sans-serif;

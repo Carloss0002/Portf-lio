@@ -2,13 +2,24 @@
    <section>
       <h2 class="text-center mb-5">Sobre Mim</h2>
       <article class="d-flex justify-content-around mt-3">
-        <div class="order-2 w-50 mr-5 text-justify">
+        <div class="order-2 w-50 mr-5 text-justify align-self-center">
             <p class="text">&nbsp;Olá, Eu sou <a href="" target="blank">Carlos Eduardo</a>, Desenvolvedor web front end, com grande vontade de crescer neste incrível mundo.</p>
-            <p class="text">&nbsp;Sempre fui curioso pela carreira de desenvolvedor, mas foi no ano de 2020 que comecei a estudar e por em pratica tudo que aprendia, e em 2021 tornei-me mais ativo na comunidade, criando meu perfil no <a href="" target="blank">Github <b-icon icon="github"></b-icon></a> e compartilhando meus projetos e exercícios.</p>
-            <p class="text">&nbsp;Mas não pretendo ficar estagnado na web, desejo no futuro focar no desenvolvimento mobile e me aprofundar no desenvolvimento web, e aprofundar meus conhecimentos neste gigante chamado JavaScript.</p>
-            <div>
-                  <div>
-                    <b-button class="btn-body" lg="4" size="sm" variant="primary">Download CV <b-icon icon="arrow-down-circle-fill" variant="dark"></b-icon> </b-button>
+            <p class="text">&nbsp;Sempre fui curioso pela carreira de desenvolvedor, mas foi no ano de 2020 que comecei a estudar e por em pratica tudo que aprendia, e em 2021 tornei-me mais ativo na comunidade, criando meu perfil no <a href="" target="blank">Github<b-icon icon="github"></b-icon></a> e compartilhando meus projetos e exercícios.</p>
+              <div class="mt-5">
+                 <small>Você pode conhecer mais do meu trabalho das seguintes formas: </small> 
+                  <div class="d-flex justify-content-around">
+                   <a href="https://www.linkedin.com/in/carlos-eduardo002/" target="blank">
+                    <b-icon icon="linkedin" font-scale="2" variant="light"></b-icon>
+                   </a>
+                   <a href="https://github.com/Carloss0002" target="blank">
+                     <b-icon icon="github" font-scale="2" variant="light"></b-icon>
+                   </a>
+                   <a href="mailto:carlosseduardo003@hotmail.com" target="blank">
+                    <b-icon icon="voicemail" font-scale="2" variant="light"></b-icon>
+                   </a>
+                    <b-button class="btn-body" lg="4" size="sm" variant="primary">
+                     <b-icon icon="arrow-down-circle-fill" variant="light"></b-icon> Download CV
+                    </b-button>
                   </div>
             </div>
          </div> 
