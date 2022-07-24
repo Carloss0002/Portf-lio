@@ -13,8 +13,25 @@
 </template>
 
 <script>
+
 export default {
-  
+     data(){
+        return{
+          baseUrl: process.env.VUE_APP_BASE_URL ,
+          projetos: []
+        }
+     },
+     methods:{
+        fetchData(){
+           this.$axios.get('/JSON/projetos.json').then(response=>{
+                 this.projetos = response.data
+                 console.log(this.projetos)
+           })
+        }
+     },
+     created(){
+         this.fetchData()
+     }
 }
 </script>
 
