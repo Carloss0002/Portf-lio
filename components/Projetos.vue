@@ -2,12 +2,58 @@
   <section id="Projetos" class="text-center">
     <h2 class="title">Projetos</h2>
     <article>
-        <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="blank">Github</a></p>
-         
+        <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="_blank">Github</a></p>
+        <span>/*Passe o mouse nos cards e veja a mágica acontecer*/</span>
+         <div class="d-flex justify-content-center">
+            <div v-for="produtos in projetos" :key="produtos.id">
+               <div v-if="produtos.categoria == 'Html'" class="cards">
+                  <div class="card">
+                    <img :src="produtos.imagem" class="img" alt="">
+                  </div>
+                  <div class="texto d-flex flex-column justify-content-center align-items-center">
+                     <p>{{produtos.descricao}}</p>
+                     <div>
+                      <b-button class="btn-link" variant="primary">
+                          <a :href="produtos.repo" target="_blank">Repositorio</a>
+                      </b-button>
+                      <b-button class="btn-link" variant="primary">
+                          <a :href="produtos.site" target="_blank">Site ativo</a>
+                      </b-button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <transition name="slide">
+            <div v-if="show" class="d-flex justify-content-center">
+               <div v-for="produtos in projetos" :key="produtos.id">
+                  <div v-if="produtos.categoria === 'vue'" class="cards">
+                    <div class="card">
+                      <img :src="produtos.imagem" class="img" alt="">
+                    </div>
+                    <div class="texto d-flex flex-column justify-content-center align-items-center">
+                      <p>{{produtos.descricao}}</p>
+                      
+                      <div>
+                        <b-button class="btn-link" variant="primary">
+                            <a :href="produtos.repo" target="_blank">Repositorio</a>
+                        </b-button>
+                        <b-button class="btn-link" variant="primary">
+                            <a :href="produtos.site" target="_blank">Site ativo</a>
+                        </b-button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+           
+         </transition>
+        
          
         
 
-        <b-button class="btn-body w-25" variant="primary">Ver Mais</b-button>
+        <b-button @click="show = !show" class="btn-body w-25 mt-5 btn" variant="primary">{{show? 'Ver menos': 'Ver mais'}}</b-button>
     </article>
   </section>
 </template>
@@ -18,12 +64,13 @@ export default {
      data(){
         return{
           baseUrl: process.env.VUE_APP_BASE_URL ,
-          projetos: []
+          projetos: [],
+          show: false
         }
      },
      methods:{
         fetchData(){
-           this.$axios.get('/JSON/projetos.json').then(response=>{
+         this.$axios.get('/JSON/projetos.json').then(response=>{
                  this.projetos = response.data
                  console.log(this.projetos)
            })
@@ -31,7 +78,7 @@ export default {
      },
      created(){
          this.fetchData()
-     }
+    }
 }
 </script>
 
@@ -39,4 +86,78 @@ export default {
  #subtitle-projetos{
     font-size: 1.50rem;
  }
+ .btn{
+   margin-top: 20px;
+ }
+ .card{
+   width: 300px;
+   height: 200px;
+   margin-right:20px;
+   margin-bottom: 40px;
+   margin-top: 40px;
+   border-radius: 10px;
+ }
+ .img{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   object-fit: cover;
+ }
+ .card .img:hover{
+    cursor: pointer;
+    opacity: 0.3;
+    box-shadow: 5px 5px 30px 5px;
+ }
+ .texto{
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin-top: -240px;
+  border-radius: 10px;
+  color: #000;
+  visibility: hidden;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+ }
+ .texto p{
+  font-weight: bold;
+ }
+ .cards:hover .texto{
+    visibility: visible;
+ }
+
+ .btn-link{
+   outline: none;
+   width: 100px;
+   height: 35px;
+ }
+ .btn-link a{
+   color: #fff;
+   text-decoration: none;
+ }
+ .slide-enter-active {
+  animation: bounce-in 0.5s;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.slide-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
 </style>

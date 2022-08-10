@@ -1,40 +1,48 @@
-{
-    "projetos":[
+
+      [
          {
             "id": 1,
-            "imagem": "https://s2.glbimg.com/dDXvbOLO_RG9UFJEoGMS1VK6MBA=/0x0:695x273/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/j/T/mSZEgOQ2ArTnDiCWVyjQ/2016-11-01-captura-de-tela-2016-11-01-as-10.38.58.png",
+            "imagem": "/images/spotify.jpg",
             "categoria": "Html",
-            "descricao":""
+            "repo":"https://github.com/Carloss0002/spotify",
+            "descricao":"Clone do index do Spotify, utilizando Html, Css e Bootstrap. Para uma informação mais detalhada acesse o repositorio e leia o README.md."
          },
          {
             "id": 2,
             "imagem": "/images/formulario.jpg",
             "categoria":"Html",
-            "descricao":""
+            "descricao":"Página formulário desafio do frontend Mentor, Neste desafio uma prática de como funciona um formulário na vida real, o email é verificado.",
+            "repo":"https://github.com/Carloss0002/sign-up-form",
+            "site": "https://sign-up-form-seven.vercel.app/"
          },
          {
             "id": 3,
             "imagem": "/images/loop.jpg",
             "categoria":"Html",
-            "descricao": ""
+            "descricao": "Landing page loop com design responsivo feito em Html Css e JavaScript",
+            "repo":"https://github.com/Carloss0002/loop",
+            "site": "https://loop-pearl.vercel.app/"
          },
          {
             "id": 4,
-            "imagem":"/images/randomPost.jpg",
+            "imagem":"/images/random.jpg",
             "categoria":"vue",
-            "descricao": ""
+            "descricao": "Rede social fictícia criada como desafio do curso Vue, criado com Vue cli, Firebase e utilizando o localStorage para salvar algumas informações",
+            "repo": "https://github.com/Carloss0002/Social",
+            "site":"https://social-delta.vercel.app"
          },
          {
             "id": 5,
-            "imagem":"/images/cacto.png",
+            "imagem":"/images/search.jpg",
             "categoria":"vue",
-            "descricao": ""
+            "descricao": "App criado a partir da API do Github, criado com vue cli, axios e bootstrap",
+            "repo": "https://github.com/Carloss0002/Search-User",
+            "site":"https://search-user.vercel.app/"
          },
          {
             "id": 6,
-            "imagem":"/images/cacto.png",
+            "imagem":"https://rtsbrazil.com.br/PG2019/img/home/em-breve2.png",
             "categoria":"vue",
             "descricao": ""
          }
     ]
-}

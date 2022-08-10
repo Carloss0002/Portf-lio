@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="#Contatos">
         <h2 class="title text-center">Entre em contato comigo</h2>
         <article class="d-flex justify-content-around mt-5">
             <div>
@@ -31,6 +31,11 @@
 
 <script>
 export default {
+  methods:{
+    enviarPost(){
+      console.log('Caracas')
+    }
+  }
 
 }
 </script>

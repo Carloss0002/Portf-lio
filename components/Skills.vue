@@ -1,55 +1,55 @@
 <template>
      <section id="Skills">
           <h2 class="text-center title mb-5">Skills</h2>
-          <article>
+          <article name="habilidades do desenvolvedor">
             <div>
              <h3 class="subititle text-center">Principais Habilidades</h3>
-             <p class="text-center text">Tecnologias que me ajudam a concluir e facilitar minhas tarefas</p>
+             <p class="text-center text" name="Tecnologias que me ajudam a concluir e facilitar minhas tarefas">Tecnologias que me ajudam a concluir e facilitar minhas tarefas</p>
              
              <div class="d-flex justify-content-center ">
-              <div class="row w-25">
+              <div class="row w-25" name="card">
                   <div class="mini-card col-md-3 m-2">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/html.svg" alt="Html5 logo" width="40">
                       </figure>
                   </div>
-                  <div class="mini-card col-md-3 m-2 ">
+                  <div class="mini-card col-md-3 m-2 " name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/css-svgrepo-com.svg" alt="Css logo" width="40">   
                       </figure>
                   </div>
-                  <div class="mini-card col-md-3 m-2">
+                  <div class="mini-card col-md-3 m-2" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/js-svgrepo-com.svg" alt="Js logo" width="40">
                         
                       </figure>
                   </div>
-                  <div class="mini-card col-md-3 m-2">
+                  <div class="mini-card col-md-3 m-2" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/bootstrap-svgrepo-com.svg" alt="Bootstrap logo" width="40">                      
                       </figure>
                 </div>
-                  <div class="mini-card col-md-3 m-2">
+                  <div class="mini-card col-md-3 m-2" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/git-svgrepo-com.svg" alt="git logo" width="40">                    
                       </figure>
                   </div>
-                  <div class="mini-card col-md-3 m-2">
+                  <div class="mini-card col-md-3 m-2" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/github-svgrepo-com.svg" alt="github logo" width="40">     
                       </figure>
                   </div>
-                  <div class="mini-card col-md-3 m-2">
+                  <div class="mini-card col-md-3 m-2" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/vue-9-logo-svgrepo-com.svg" alt="Vue logo" width="40"> 
                       </figure>
                   </div>
-                  <div class="mini-card col-md-3 m-2">
+                  <div class="mini-card col-md-3 m-2" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/nuxt-icon-svgrepo-com.svg" alt="Nuxt logo" width="40">
                       </figure>
                   </div>
-                  <div class="mini-card col-md-3 m-2">
+                  <div class="mini-card col-md-3 m-2" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/react-svgrepo-com.svg" alt="React logo" width="40">
                       </figure>

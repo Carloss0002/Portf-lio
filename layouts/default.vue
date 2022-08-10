@@ -11,19 +11,19 @@
             <b-collapse class="collapse navbar-collapse pr-5" id="menu" is-nav>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="">HOME</a>
+                        <a class="nav-link" href="#Home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">SKILLS</a>
+                        <a class="nav-link" href="#Skills">SKILLS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">SOBRE MIM</a>
+                        <a class="nav-link" href="#Sobre">SOBRE MIM</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">PROJETOS</a>
+                        <a class="nav-link" href="#Projetos">PROJETOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">CONTATO</a>
+                        <a class="nav-link" href="#Contatos">CONTATO</a>
                     </li>
                 </ul>
             </b-collapse>
