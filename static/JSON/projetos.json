@@ -5,13 +5,13 @@
             "imagem": "/images/spotify.jpg",
             "categoria": "Html",
             "repo":"https://github.com/Carloss0002/spotify",
-            "descricao":"Clone do index do Spotify, utilizando Html, Css e Bootstrap. Para uma informação mais detalhada acesse o repositorio e leia o README.md."
+            "descricao":"Clone do Spotify, utilizando Html e Css. Para mais informações mais detalhadas visite o repositorio."
          },
          {
             "id": 2,
             "imagem": "/images/formulario.jpg",
             "categoria":"Html",
-            "descricao":"Página formulário desafio do frontend Mentor, Neste desafio uma prática de como funciona um formulário na vida real, o email é verificado.",
+            "descricao":"Página formulário desafio do frontend Mentor, formulário baseado na vida real.",
             "repo":"https://github.com/Carloss0002/sign-up-form",
             "site": "https://sign-up-form-seven.vercel.app/"
          },
@@ -27,7 +27,7 @@
             "id": 4,
             "imagem":"/images/random.jpg",
             "categoria":"vue",
-            "descricao": "Rede social fictícia criada como desafio do curso Vue, criado com Vue cli, Firebase e utilizando o localStorage para salvar algumas informações",
+            "descricao": "Rede fictícia criada com Vue.js, Firebase e utilizando o localStorage.",
             "repo": "https://github.com/Carloss0002/Social",
             "site":"https://social-delta.vercel.app"
          },

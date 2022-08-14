@@ -1,5 +1,5 @@
 <template>
-     <section id="Skills">
+     <section id="Skills" data-aos="fade-up" data-aos-duration="1500">
           <h2 class="text-center title mb-5">Skills</h2>
           <article name="habilidades do desenvolvedor">
             <div>

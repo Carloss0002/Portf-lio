@@ -1,17 +1,17 @@
 <template>
-  <section id="Projetos" class="text-center">
+  <section id="Projetos" class="text-center" data-aos="fade-up" data-aos-duration="1500">
     <h2 class="title">Projetos</h2>
     <article>
         <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="_blank">Github</a></p>
         <span>/*Passe o mouse nos cards e veja a mágica acontecer*/</span>
-         <div class="d-flex justify-content-center">
+         <div class="d-flex flex-wrap justify-content-center">
             <div v-for="produtos in projetos" :key="produtos.id">
                <div v-if="produtos.categoria == 'Html'" class="cards">
                   <div class="card">
                     <img :src="produtos.imagem" class="img" alt="">
                   </div>
                   <div class="texto d-flex flex-column justify-content-center align-items-center">
-                     <p>{{produtos.descricao}}</p>
+                     <p class="text">{{produtos.descricao}}</p>
                      <div>
                       <b-button class="btn-link" variant="primary">
                           <a :href="produtos.repo" target="_blank">Repositorio</a>
@@ -26,14 +26,14 @@
          </div>
 
          <transition name="slide">
-            <div v-if="show" class="d-flex justify-content-center">
+            <div v-if="show" class="d-flex flex-wrap justify-content-center">
                <div v-for="produtos in projetos" :key="produtos.id">
                   <div v-if="produtos.categoria === 'vue'" class="cards">
                     <div class="card">
                       <img :src="produtos.imagem" class="img" alt="">
                     </div>
                     <div class="texto d-flex flex-column justify-content-center align-items-center">
-                      <p>{{produtos.descricao}}</p>
+                      <p class="text">{{produtos.descricao}}</p>
                       
                       <div>
                         <b-button class="btn-link" variant="primary">

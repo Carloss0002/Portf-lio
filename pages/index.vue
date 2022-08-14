@@ -9,8 +9,10 @@
 </template>
 
 <script>
+import aosMixins from '~/mixins/aos.js'
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  mixins: [aosMixins]
 }
 </script>
 

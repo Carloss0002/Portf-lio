@@ -6,6 +6,7 @@ body{
     margin-top: 142px;
     background-color: #353535;
     color: #fff;
+    overflow-x:hidden;
 }
 body::-webkit-scrollbar{
     width: 12px;
@@ -35,3 +36,9 @@ body::-webkit-scrollbar-thumb {
 .text{
    font: normal 1.40rem 'Courier New', Courier, monospace;
 }
+@media (max-width: 992px) { 
+    body{
+        text-align: center;
+        margin: 0 auto;
+    }
+ }
