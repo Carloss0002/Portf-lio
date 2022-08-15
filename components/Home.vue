@@ -4,13 +4,13 @@
       <article class="d-flex flex-row-reverse flex-wrap-reverse justify-content-around" name="página principal">
 
          <div class="  align-self-center">
-            <h1 class="title-home my-auto mb-5 animation">Olá, eu sou Carlos Eduardo!</h1>
+            <h1 class="title-home  my-auto mb-5 animation">Olá, eu sou Carlos Eduardo!</h1>
             <p class="subtitle mb-4 mt-4" name="Desenvolvedor web Front end">Desenvolvedor Web Front end</p> 
-            <b-button class="btn text-center" size="lg" variant="primary">Entrar em contato</b-button>
+            <b-button class="btn text-center" size="lg" variant="primary" href="#Contatos">Entrar em contato</b-button>
          </div>
 
          <figure data-aos="zoom-in-right" data-aos-duration="500">
-            <img src="/images/jovem_Computer.png" alt="jovem programador">
+            <img src="/images/jovem_Computer.png" alt="jovem programador" class="img-sm">
             <figcaption>Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA" target="_blank">Icons 8</a> from <a href="https://icons8.com/illustrations" target="_blank">Ouch!</a></figcaption>
          </figure>
       </article> 
@@ -53,6 +53,15 @@ export default {
       }
       to{
          border-right-color: transparent;
+      }
+    }
+    @media (max-width: 992px){
+      .title-home{
+         font-size: 2rem;
+         white-space:pre-wrap;
+      }
+      .animation{
+         animation: blinkCursor 500ms steps(40) infinite normal;
       }
     }
 </style>

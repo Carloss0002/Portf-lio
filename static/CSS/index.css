@@ -36,9 +36,47 @@ body::-webkit-scrollbar-thumb {
 .text{
    font: normal 1.40rem 'Courier New', Courier, monospace;
 }
+.text-sobre{
+    width: 50%;
+}
 @media (max-width: 992px) { 
     body{
         text-align: center;
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .img-sm{
+        width: 60%;
+    }
+    .size-font{
+        font: 1rem;
+    }
+    .sm-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-sobre{
+        width: 80%;
+        z-index: 1;
+    }
+    .div-buttons a{
+       padding-left: 20px;
+    }
+    .btn-body{
+        width: 320px;
+        margin-left: 40px;
+    }
+    .geral-inputs{
+        margin-top: 10px;
+    }
+    
+ }
+ @media (max-width: 440px){
+    body{
+        overflow-x: scroll;
     }
  }

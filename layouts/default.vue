@@ -17,10 +17,10 @@
                         <a class="nav-link" href="#Skills">SKILLS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Sobre">SOBRE MIM</a>
+                        <a class="nav-link" href="#Projetos">PROJETOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Projetos">PROJETOS</a>
+                        <a class="nav-link" href="#Sobre">SOBRE MIM</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Contatos">CONTATO</a>
@@ -60,5 +60,10 @@ export default {
         font-size: 1.80rem;
         font-family: 'Saira', sans-serif;
         padding: 30px 0 30px 0;
+    }
+    @media (max-width: 992px) {
+        a{
+            font-size: 16px;
+        }
     }
 </style>
