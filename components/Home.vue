@@ -6,7 +6,7 @@
          <div class="  align-self-center">
             <h1 class="title-home  my-auto mb-5 animation">Olá, eu sou Carlos Eduardo!</h1>
             <p class="subtitle mb-4 mt-4" name="Desenvolvedor web Front end">Desenvolvedor Web Front end</p> 
-            <b-button class="btn text-center" size="lg" variant="primary" href="#Contatos">Entrar em contato</b-button>
+            <b-button class="btn d-flex justify-content-center align-items-center" size="lg" variant="primary" href="#Contatos">Entrar em contato</b-button>
          </div>
 
          <figure data-aos="zoom-in-right" data-aos-duration="500">

@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid-lg">
     <header>
-        <nav class="navbar navbar-expand-sm topoMenu fixed-top" type="dark" toggleable="lg" variant="dark">
+        <nav class="navbar navbar-expand-lg topoMenu fixed-top" type="dark" toggleable="lg" variant="dark">
             <a class="navbar-brand pl-5" href="">Carlos Eduardo</a>
             
               <b-navbar-toggle target="menu">

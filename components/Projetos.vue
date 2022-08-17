@@ -35,7 +35,7 @@
                     <div class="texto d-flex flex-column justify-content-center align-items-center">
                       <p class="text">{{produtos.descricao}}</p>
                       
-                      <div>
+                      <div v-if="produtos.render">
                         <b-button class="btn-link" variant="primary">
                             <a :href="produtos.repo" target="_blank">Repositorio</a>
                         </b-button>
@@ -86,6 +86,13 @@ export default {
  #subtitle-projetos{
     font-size: 1.50rem;
  }
+ span{
+    color: #1d1d1d;
+ }
+ span:hover{
+  cursor: pointer;
+  color: #585858;
+ }
  .btn{
    margin-top: 20px;
  }
@@ -116,7 +123,7 @@ export default {
   border-radius: 10px;
   color: #000;
   visibility: hidden;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.664);
   cursor: pointer;
  }
  .texto p{

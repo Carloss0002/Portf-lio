@@ -17,8 +17,10 @@
                    <a href="mailto:carlosseduardo003@hotmail.com" target="blank">
                     <b-icon icon="voicemail" font-scale="2" variant="light"></b-icon>
                    </a>
-                    <b-button class="btn-body" lg="4" size="sm" variant="primary">
-                     <b-icon icon="arrow-down-circle-fill" variant="light"></b-icon> Download CV
+                    <b-button class="btn-body d-flex justify-content-center align-items-center" lg="4" size="sm" variant="primary">
+                     <a href="/curriculum/Currículo.pdf" target="_blank" download="Currículo.pdf" type="application/pdf">
+                        <b-icon icon="arrow-down-circle-fill" variant="light"></b-icon> Download CV
+                     </a>
                     </b-button>
                   </div>
             </div>
@@ -32,11 +34,21 @@
 </template>
 
 <script>
+
 export default {
 
 }
 </script>
 
 <style scoped>
-
+   button a{
+      list-style: none;
+      color: #fff;
+      font-size: 25px;
+   }
+   @media (max-width: 992px){
+      button a {
+         font-size: 15px;
+      }
+   }
 </style>
