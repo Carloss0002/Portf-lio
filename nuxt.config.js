@@ -15,7 +15,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-
+  target: 'static',
+  router: { base: '/Portf-lio/' },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
@@ -24,7 +25,7 @@ export default {
      '~/plugins/firebase.js',
      {src: '~/plugins/vue-notification', ssr: false}
   ],
-
+  
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
