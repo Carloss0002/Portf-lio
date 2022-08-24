@@ -43,9 +43,9 @@
          },
          {
             "id": 6,
-            "imagem":"/images/laptop.gif",
+            "imagem":"/images/Tempo.jpg",
             "categoria":"vue",
-            "render": false,
-            "descricao": "EM BREVE, PORTFOLIO REACT"
+            "render": true,
+            "descricao": "Projeto vue e axios sobre meteorologia, consumindo api weather"
          }
     ]

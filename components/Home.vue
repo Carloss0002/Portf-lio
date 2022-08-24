@@ -10,7 +10,7 @@
          </div>
 
          <figure data-aos="zoom-in-right" data-aos-duration="500">
-            <img src="/images/jovem_Computer.png" alt="jovem programador" class="img-sm">
+            <img src="http://localhost:3000/Portf-lio//images/jovem_Computer.png" alt="jovem programador" class="img-sm">
             <figcaption>Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA" target="_blank">Icons 8</a> from <a href="https://icons8.com/illustrations" target="_blank">Ouch!</a></figcaption>
          </figure>
       </article> 

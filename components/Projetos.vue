@@ -59,7 +59,7 @@
 </template>
 
 <script>
-
+import Projetos from '../JSON/projetos.json'
 export default {
      data(){
         return{
@@ -70,15 +70,14 @@ export default {
      },
      methods:{
         fetchData(){
-         this.$axios.get('/JSON/projetos.json').then(response=>{
-                 this.projetos = response.data
-                 console.log(this.projetos)
-           })
+
+            this.projetos = Projetos
         }
      },
      created(){
          this.fetchData()
-    }
+        
+    },
 }
 </script>
 
