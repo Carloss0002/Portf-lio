@@ -70,7 +70,6 @@ export default {
      },
      methods:{
         fetchData(){
-
             this.projetos = Projetos
         }
      },
