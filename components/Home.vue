@@ -3,8 +3,8 @@
 
       <article class="d-flex flex-row-reverse flex-wrap-reverse justify-content-around" name="página principal">
 
-         <div class="  align-self-center">
-            <h1 class="title-home  my-auto mb-5 animation">Olá, eu sou Carlos Eduardo!</h1>
+         <div class="align-self-center">
+            <h1 class="title-home my-auto mb-5 animation">Olá, eu sou Carlos Eduardo!</h1>
             <p class="subtitle mb-4 mt-4" name="Desenvolvedor web Front end">Desenvolvedor Web Front end</p> 
             <b-button class="btn d-flex justify-content-center align-items-center" size="lg" variant="primary" href="#Contatos">Entrar em contato</b-button>
          </div>
@@ -25,12 +25,11 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
     #Home{
       margin-bottom: 50px;
     }
     .title-home{
-      font: normal 2.9rem 'Special Elite', monospace, sans-serif;
+      font: normal 2.9rem 'Open Sans', sans-serif;
       border-right: 2px solid rgba(255, 255, 255, .75);
       white-space: nowrap;
       overflow: hidden;

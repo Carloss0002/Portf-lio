@@ -3,9 +3,9 @@
       <h2 class="text-center mb-5">Sobre Mim</h2>
       <article class="d-flex flex-wrap justify-content-around mt-3">
         <div class="order-2  text-sobre  mr-5 text-justify align-self-center" data-aos="fade-up-left" data-aos-duration="1500">
-            <p class="text">&nbsp;Olá, Eu sou <a href="https://github.com/Carloss0002" target="blank">Carlos Eduardo</a>, Desenvolvedor web front end, com grande vontade de crescer neste incrível mundo.</p>
-            <p class="text">&nbsp;Sempre fui curioso pela carreira de desenvolvedor, mas foi no ano de 2020 que comecei a estudar e por em pratica tudo que aprendia, e em 2021 tornei-me mais ativo na comunidade, criando meu perfil no <a href="https://www.linkedin.com/in/carlos-eduardo002/" target="blank">Github<b-icon icon="github"></b-icon></a> e compartilhando meus projetos e exercícios.</p>
-              <div class="mt-5">
+            <p class="text">&nbsp;Olá, Eu sou <a href="https://www.linkedin.com/in/carlos-eduardo002/" target="blank">Carlos Eduardo</a>, Desenvolvedor web front end, com grande vontade de crescer neste incrível mundo.</p>
+            <p class="text">&nbsp;Sempre fui curioso pela carreira de desenvolvedor, mas foi no ano de 2020 que comecei a estudar e por em pratica tudo que aprendia, e em 2021 tornei-me mais ativo na comunidade, criando meu perfil no <a href="https://github.com/Carloss0002" target="blank">Github<b-icon icon="github"></b-icon></a> e compartilhando meus projetos e exercícios.</p>
+              <div class="mt-5">                                                                                                                                                                                                                    
                  <small>Você pode conhecer mais do meu trabalho das seguintes formas: </small> 
                   <div class="d-flex justify-content-around div-buttons">
                    <a href="https://www.linkedin.com/in/carlos-eduardo002/" target="blank">
@@ -40,6 +40,9 @@ export default {
 </script>
 
 <style scoped>
+  a{
+   color: #6AA4AB;
+  }
    button a{
       list-style: none;
       color: #fff;

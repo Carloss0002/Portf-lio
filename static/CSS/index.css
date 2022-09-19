@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Prata&display=swap');
 *{
     margin:0;
     padding: 0;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+    scroll-behavior: inherit;
 }
 body{
     margin-top: 142px;
@@ -31,13 +33,13 @@ body::-webkit-scrollbar-thumb {
    height: 40px;   
 }
 .title{
-    font: normal 2.5rem Arial, sans-serif;
+    font: normal 2.5rem 'Open Sans', sans-serif;
 }
 .subtitle{
-    font: normal 2rem 'Times New Roman', Times, serif;
+    font: normal 2rem 'Prata', serif;
 }
 .text{
-   font: normal 1.40rem 'Courier New', Courier, monospace;
+   font: normal 1.40rem 'Prata', serif, monospace;
 }
 .text-sobre{
     width: 50%;

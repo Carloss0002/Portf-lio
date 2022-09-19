@@ -1,10 +1,18 @@
 <template>
   <div class="container-fluid-lg">
     <header>
-        <nav class="navbar navbar-expand-lg topoMenu fixed-top" type="dark" toggleable="lg" variant="dark">
-            <a class="navbar-brand pl-5" href="">Carlos Eduardo</a>
+        <nav 
+           id="navElement" 
+           class="navbar navbar-expand-lg topoMenu fixed-top"
+           type="dark" 
+           toggleable="lg" 
+           variant="dark"
+           :style="scrollPosition? 'background: #1f1f1f': '' "
+        >
+           
+            <a class="navbar-brand pl-md-5 pl-sm-0" href="">Carlos Eduardo</a>
             
-              <b-navbar-toggle target="menu">
+              <b-navbar-toggle target="menu" class="menu-mobile">
                  <b-icon icon="menu-button-wide" variant="light" scale="2"></b-icon>
               </b-navbar-toggle>
 
@@ -39,9 +47,21 @@
 </template>
 
 <script>
-export default {
-
-}
+ export default{
+    data(){
+        return{
+            scrollPosition: null
+        }
+    },
+    methods:{
+        updateScroll(){
+            this.scrollPosition = window.scrollY
+        }
+    },
+    mounted(){
+        window.addEventListener('scroll', this.updateScroll)
+    }
+ }
 </script>
 
 <style scoped>
@@ -50,6 +70,9 @@ export default {
     .topoMenu{
         background: #1f1f1fe5;
         border-radius: 0 0 15px 15px;
+    }
+    .active{
+        background: pink;
     }
     a, .nav-link{
         font: normal 1.32rem 'Poppins', sans-serif;
@@ -63,7 +86,12 @@ export default {
     }
     @media (max-width: 992px) {
         a{
-            font-size: 16px;
+            font-size: 8px;
+        }
+        .menu-mobile{
+            margin-right: 10px;
         }
     }
 </style>
+
+

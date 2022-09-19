@@ -5,7 +5,8 @@
             "imagem": "/images/spotify.jpg",
             "categoria": "Html",
             "repo":"https://github.com/Carloss0002/spotify",
-            "descricao":"Clone do Spotify, utilizando Html e Css. Para mais informações mais detalhadas visite o repositorio."
+            "site": "https://spotify-flax-chi.vercel.app/",
+            "descricao":"Clone do Spotify, página principal, utilizando Html e Css."
          },
          {
             "id": 2,
@@ -17,11 +18,11 @@
          },
          {
             "id": 3,
-            "imagem": "/images/loop.jpg",
+            "imagem": "/images/easybank.jpg",
             "categoria":"Html",
-            "descricao": "Landing page loop com design responsivo feito em Html Css e JavaScript",
-            "repo":"https://github.com/Carloss0002/loop",
-            "site": "https://loop-pearl.vercel.app/"
+            "descricao": "Landing page com design responsivo feito em Html Css e JavaScript",
+            "repo":"https://github.com/Carloss0002/landing-page",
+            "site": "https://landing-page-teal-tau.vercel.app/"
          },
          {
             "id": 4,
