@@ -7,9 +7,9 @@
              <p class="text-center text" name="Tecnologias que me ajudam a concluir e facilitar minhas tarefas">Tecnologias que me ajudam a concluir e facilitar minhas tarefas</p>
              
              <div class="d-flex justify-content-center w-100">
-              <div class="d-flex justify-content-center  flex-column w-50" name="card">
+              <div class="d-flex justify-content-center flex-column w-md-50 w-sm-75" name="card">
 
-                <div class="d-flex flex-wrap justify-content-between">
+                <div class="d-flex flex-row justify-content-between">
 
                   <div class="mini-card mt-3 text-center">
                       <figure class="my-auto pt-2 pb-2">
@@ -137,6 +137,7 @@ export default {
      width: 160px;
      text-align: center;
      border-radius: 10px;
+     margin-left: 20px;
    }
    .mini-card:hover{
     cursor: pointer;
@@ -161,7 +162,7 @@ export default {
   }
   @media (max-width: 992px) {
       .mini-card{
-        margin: 0 auto;
+        margin-left: 10px;
       }
    }
 </style>
