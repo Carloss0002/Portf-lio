@@ -7,11 +7,11 @@
              <p class="text-center text" name="Tecnologias que me ajudam a concluir e facilitar minhas tarefas">Tecnologias que me ajudam a concluir e facilitar minhas tarefas</p>
              
              <div class="d-flex justify-content-center w-100">
-              <div class="d-flex justify-content-center  flex-column" name="card">
+              <div class="d-flex justify-content-center  flex-column w-50" name="card">
 
-                <div class="d-flex flex-wrap">
+                <div class="d-flex flex-wrap justify-content-between">
 
-                  <div class="mini-card text-center m-2">
+                  <div class="mini-card mt-3 text-center">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/html.svg" alt="Html5 logo" width="40">
                       </figure>
@@ -20,7 +20,7 @@
                         Linguagem de marcação base da web, que estruturam a página.
                        </p>
                   </div>
-                  <div class="mini-card  m-2 " name="card">
+                  <div class="mini-card  mt-3" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/css-svgrepo-com.svg" alt="Css logo" width="40">   
                       </figure>
@@ -29,7 +29,7 @@
                         Linguagem de estilo que melhora o visual das páginas web. 
                       </p>
                   </div>
-                  <div class="mini-card  m-2" name="card">
+                  <div class="mini-card mt-3" name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/js-svgrepo-com.svg" alt="Js logo" width="40">         
                       </figure>
@@ -39,7 +39,7 @@
                       </p>
                   </div>
 
-                  <div class="mini-card  m-2" name="card">
+                  <div class="mini-card mt-3 " name="card">
                       <figure class="my-auto pt-2 pb-2">
                         <img src="/images/bootstrap-svgrepo-com.svg" alt="Bootstrap logo" width="40">                      
                       </figure>
@@ -51,11 +51,11 @@
                 </div>
 
                <transition name="bounce">
-                 <div v-if="show">
+                 <div v-if="show" class="mt-3">
 
-                  <div class="d-flex flex-wrap" >
+                  <div class="d-flex flex-wrap justify-content-between" >
                   
-                    <div class="mini-card m-2" name="card">
+                    <div class="mini-card mt-3" name="card">
                         <figure class="my-auto pt-2 pb-2">
                           <img src="/images/git-svgrepo-com.svg" alt="git logo" width="40">                    
                         </figure>
@@ -65,7 +65,7 @@
                         </p>
                     </div>
 
-                    <div class="mini-card m-2" name="card">
+                    <div class="mini-card mt-3" name="card">
                         <figure class="my-auto pt-2 pb-2">
                           <img src="/images/github-svgrepo-com.svg" alt="github logo" width="40">     
                         </figure>
@@ -75,7 +75,7 @@
                         </p>
                     </div>
 
-                    <div class="mini-card  m-2" name="card">
+                    <div class="mini-card mt-3" name="card">
                         <figure class="my-auto pt-2 pb-2">
                           <img src="/images/vue-9-logo-svgrepo-com.svg" alt="Vue logo" width="40"> 
                         </figure>
@@ -85,7 +85,7 @@
                         </p>
                     </div>
 
-                    <div class="mini-card  m-2" name="card">
+                    <div class="mini-card mt-3" name="card">
                         <figure class="my-auto pt-2 pb-2">
                           <img src="/images/nuxt-icon-svgrepo-com.svg" alt="Nuxt logo" width="40">
                         </figure>
@@ -98,7 +98,7 @@
 
                   <div class="d-flex justify-content-center">
                     
-                    <div class="mini-card  m-2" name="card">
+                    <div class="mini-card mt-3" name="card">
                         <figure class="my-auto pt-2 pb-2">
                           <img src="/images/react-svgrepo-com.svg" alt="React logo" width="40">
                         </figure>
@@ -159,4 +159,9 @@ export default {
       transform: scale(1);
     }
   }
+  @media (max-width: 992px) {
+      .mini-card{
+        margin: 0 auto;
+      }
+   }
 </style>

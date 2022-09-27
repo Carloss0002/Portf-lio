@@ -63,7 +63,6 @@ import Projetos from '../JSON/projetos.json'
 export default {
      data(){
         return{
-          baseUrl: process.env.VUE_APP_BASE_URL ,
           projetos: [],
           show: false
         }
@@ -165,4 +164,5 @@ export default {
   transform: translateX(20px);
   opacity: 0;
 }
+
 </style>

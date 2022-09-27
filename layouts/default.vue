@@ -3,7 +3,7 @@
     <header>
         <nav 
            id="navElement" 
-           class="navbar navbar-expand-lg topoMenu fixed-top"
+           class="navbar navbar-expand-sm topoMenu fixed-top w-100"
            type="dark" 
            toggleable="lg" 
            variant="dark"

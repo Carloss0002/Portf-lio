@@ -55,6 +55,9 @@ export default {
       }
     }
     @media (max-width: 992px){
+      #Home{
+         margin-top: 120px;
+      }
       .title-home{
          font-size: 2rem;
          white-space:pre-wrap;
