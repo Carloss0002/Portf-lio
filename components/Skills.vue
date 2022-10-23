@@ -45,7 +45,7 @@
                       </figure>
                        <span class="p-4 mb-5 font-weight-bold">Bootstrap</span>
                        <p class="text-monospace mx-2">
-                        Framework web para facilitar a vida do desenvolvedor front-end. 
+                        Framework css para facilitar a vida do desenvolvedor front-end. 
                        </p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@
                         </figure>
                           <span class="p-4 mb-5 font-weight-bold">Nuxt</span>
                         <p class="text-monospace mx-2">
-                          Framework baseado em vue, que resolve alguns problemas do mesmo. 
+                          Framework baseado em vue, que facilita e muito a vida do desenvolvedor vue. 
                         </p>
                     </div>
                   </div>

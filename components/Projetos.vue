@@ -4,52 +4,56 @@
     <article>
         <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="_blank">Github</a></p>
         <span>/*Passe o mouse nos cards e veja a mágica acontecer*/</span>
-         <div class="d-flex flex-wrap justify-content-center">
-            <div v-for="produtos in projetos" :key="produtos.id">
-               <div v-if="produtos.categoria == 'Html'" class="cards">
-                  <div class="card">
-                    <img :src="produtos.imagem" class="img" alt="">
-                  </div>
-                  <div class="texto d-flex flex-column justify-content-center align-items-center">
-                     <p class="text">{{produtos.descricao}}</p>
-                     <div>
-                      <b-button class="btn-link" variant="primary">
-                          <a :href="produtos.repo" target="_blank">Repositorio</a>
-                      </b-button>
-                      <b-button class="btn-link" variant="primary">
-                          <a :href="produtos.site" target="_blank">Site ativo</a>
-                      </b-button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+        <div class=" d-flex flex-column justify-content-center align-items-center">
 
-         <transition name="slide">
-            <div v-if="show" class="d-flex flex-wrap justify-content-center">
-               <div v-for="produtos in projetos" :key="produtos.id">
-                  <div v-if="produtos.categoria === 'vue'" class="cards">
-                    <div class="card">
-                      <img :src="produtos.imagem" class="img" alt="">
-                    </div>
-                    <div class="texto d-flex flex-column justify-content-center align-items-center">
-                      <p class="text">{{produtos.descricao}}</p>
-                      
-                      <div v-if="produtos.render">
-                        <b-button class="btn-link" variant="primary">
-                            <a :href="produtos.repo" target="_blank">Repositorio</a>
-                        </b-button>
-                        <b-button class="btn-link" variant="primary">
-                            <a :href="produtos.site" target="_blank">Site ativo</a>
-                        </b-button>
+            <div class="d-flex flex-wrap justify-content-center">
+                <div v-for="produtos in projetos" :key="produtos.id">
+                  <div v-if="produtos.categoria == 'Html'" class="cards">
+                      <div class="card">
+                        <img :src="produtos.imagem" class="img" alt="">
                       </div>
-                    </div>
+                      <div class="texto d-flex flex-column justify-content-center align-items-center">
+                        <p class="text">{{produtos.descricao}}</p>
+                        <div>
+                          <b-button class="btn-link" variant="primary">
+                              <a :href="produtos.repo" target="_blank">Repositorio</a>
+                          </b-button>
+                          <b-button class="btn-link" variant="primary">
+                              <a :href="produtos.site" target="_blank">Site ativo</a>
+                          </b-button>
+                        </div>
+                      </div>
                   </div>
                 </div>
-              </div>  
-           
-         </transition>
+            </div>
+
+            <transition name="slide">
+                <div v-if="show" class="w-75 d-flex flex-wrap justify-content-center">
+                  <div v-for="produtos in projetos" :key="produtos.id">
+                      <div v-if="produtos.categoria !== 'Html'" class="cards">
+                        <div class="card">
+                          <img :src="produtos.imagem" class="img" alt="">
+                        </div>
+                        <div class="texto d-flex flex-column justify-content-center align-items-center">
+                          <p class="text">{{produtos.descricao}}</p>
+                          
+                          <div>
+                            <b-button class="btn-link" variant="primary">
+                                <a :href="produtos.repo" target="_blank">Repositorio</a>
+                            </b-button>
+                            <b-button class="btn-link" variant="primary">
+                                <a :href="produtos.site" target="_blank">Site ativo</a>
+                            </b-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+              
+            </transition>
         
+        
+        </div>
          
         
 
@@ -142,7 +146,6 @@ export default {
  .slide-enter-active {
   animation: bounce-in 0.5s;
 }
-
 @keyframes bounce-in {
   0% {
     transform: scale(0);

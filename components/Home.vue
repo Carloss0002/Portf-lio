@@ -4,9 +4,19 @@
       <article class="d-flex flex-row-reverse flex-wrap-reverse justify-content-around" name="página principal">
 
          <div class="align-self-center">
-            <h1 class="title-home my-auto mb-5 animation">Olá, eu sou Carlos Eduardo!</h1>
-            <p class="subtitle mb-4 mt-4" name="Desenvolvedor web Front end">Desenvolvedor Web Front end</p> 
-            <b-button class="btn d-flex justify-content-center align-items-center" size="lg" variant="primary" href="#Contatos">Entrar em contato</b-button>
+            <p class="title-element for-sm-el d-md-block d-sm-none">Olá,</p>
+            <h1 class="title-home title-element my-auto mb-5 animation pr-1"><span class="d-md-none d-sm-inline-block">Olá,</span> eu sou Carlos Eduardo!</h1>
+            <p class="subtitle  mb-4 mt-4 font-weight-light" name="Desenvolvedor web Front end">Desenvolvedor Web Front end</p> 
+            <div class="d-flex justify-content-around mt-md-4">
+               <b-button class="btn d-flex justify-content-center align-items-center" size="sm" variant="outline-light" href="#Contatos">
+                 <b-icon icon="github" font-scale="1"></b-icon>
+                  <span class="ml-2">GitHub</span>
+               </b-button>
+               <b-button class="btn d-flex justify-content-center align-items-center text-white" size="sm" variant="outline-secondary" href="#Contatos">
+                  <b-icon icon="linkedin" font-scale="1"></b-icon>
+                  <span class="ml-2">Linkedin</span>
+               </b-button>
+            </div>
          </div>
 
          <figure data-aos="zoom-in-right" data-aos-duration="500">
@@ -28,14 +38,24 @@ export default {
     #Home{
       margin-bottom: 50px;
     }
+    .title-element{
+       font: normal 2.9rem 'Open Sans', sans-serif;
+    }
     .title-home{
-      font: normal 2.9rem 'Open Sans', sans-serif;
       border-right: 2px solid rgba(255, 255, 255, .75);
       white-space: nowrap;
       overflow: hidden;
     }
     .animation{
       animation: blinkCursor 500ms steps(40) infinite normal, text-animation 4s steps(40) 1s normal both;
+    }
+    .btn{
+      width: 200px;
+      transition:all 1s;
+    }
+    .subtitle{
+      font: lighter 2rem 'Prata', serif;
+      color: #7B797B;
     }
     @keyframes text-animation{
       from{

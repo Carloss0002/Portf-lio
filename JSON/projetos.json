@@ -34,19 +34,28 @@
             "site":"https://social-delta.vercel.app"
          },
          {
-            "id": 5,
-            "imagem":"/images/search.jpg",
-            "categoria":"vue",
-            "render": true,
-            "descricao": "App criado a partir da API do Github, criado com vue cli, axios e bootstrap",
-            "repo": "https://github.com/Carloss0002/Search-User",
-            "site":"https://search-user.vercel.app/"
+            "id": 7,
+            "imagem": "/images/movie.jpg",
+            "categoria": "react",
+            "repo": "https://github.com/Carloss0002/movies",
+            "site": "https://the-awesome-carloss0002-site.netlify.app/",
+            "descricao": "Projeto consumindo api IMDB"
          },
          {
-            "id": 6,
-            "imagem":"/images/Tempo.jpg",
-            "categoria":"vue",
-            "render": true,
-            "descricao": "Projeto vue e axios sobre meteorologia, consumindo api weather"
+            "id": 8,
+            "imagem": "/images/jobs_search.jpg",
+            "categoria": "react",
+            "descricao": "Projeto feito em react consumindo adzuna api onde o user pode procurar vagas",
+            "repo": "https://github.com/Carloss0002/search-job",
+            "site": "https://the-awesome-carloss0002-site.netlify.app/"
+         },
+         {
+            "id": 8,
+            "imagem": "/images/desktop-image.jpg",
+            "categoria": "react",
+            "descricao":"PRojeto baseado no kanban do github, feito em react",
+            "repo": "https://github.com/Carloss0002/Sistema",
+            "site":"https://632bbe57ab905e1f7f87bd1f--the-great-carloss0002-site.netlify.app/"
          }
+
     ]
