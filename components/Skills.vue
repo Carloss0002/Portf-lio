@@ -1,6 +1,7 @@
 <template>
-     <section id="Skills" data-aos="fade-up" data-aos-duration="1500">
+     <section id="Skills">
           <h2 class="text-center title mb-5">Skills</h2>
+       <div data-aos="fade-down-left" data-aos-duration="1500">
           <article name="habilidades do desenvolvedor">
             <div>
              <h3 class="subititle text-center">Principais Habilidades</h3>
@@ -118,6 +119,7 @@
               </div>
             </div> 
           </article>
+       </div>
      </section>
 </template>
 

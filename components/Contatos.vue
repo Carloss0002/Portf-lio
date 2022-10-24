@@ -18,11 +18,11 @@
                 </div>
             </div>
 
-            <form class="d-flex flex-column mb-5" @submit.prevent="enviarPost" method="get" data-aos="fade-left" data-aos-duration="1500"> 
+            <form class="d-flex flex-column mb-5" @submit.prevent="enviarPost" method="get" data-aos="fade-left" data-aos-duration="2500"> 
                 <input class="mb-3 geral-inputs" id="input1" type="text" placeholder="nome" v-model="nome">
                 <input class="mb-3 geral-inputs" id="input2" type="email" name="email" placeholder="email" v-model="email">
                 <input class="mb-3 geral-inputs" id="input3" type="text" placeholder="Seu número" v-model="numero">
-                <textarea class="mb-3 geral-inputs" id="input4" name="escreva uma mensagem" placeholder="Escreva uma mensagem" v-model="mensagem"></textarea>
+                <textarea class="mb-3 geral-inputs pt-2" id="input4" name="escreva uma mensagem" placeholder="Escreva uma mensagem" v-model="mensagem"></textarea>
                 <b-button type="submit" class="btn-input" id="input5" variant="primary">Enviar</b-button>
             </form>
         </article>

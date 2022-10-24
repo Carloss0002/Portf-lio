@@ -50,7 +50,7 @@
             "site": "https://the-awesome-carloss0002-site.netlify.app/"
          },
          {
-            "id": 8,
+            "id": 9,
             "imagem": "/images/desktop-image.jpg",
             "categoria": "react",
             "descricao":"PRojeto baseado no kanban do github, feito em react",

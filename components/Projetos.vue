@@ -1,5 +1,5 @@
 <template>
-  <section id="Projetos" class="text-center" data-aos="fade-up" data-aos-duration="1500">
+  <section id="Projetos" class="text-center" data-aos="fade-right" data-aos-duration="1500">
     <h2 class="title">Projetos</h2>
     <article>
         <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="_blank">Github</a></p>
@@ -28,7 +28,7 @@
             </div>
 
             <transition name="slide">
-                <div v-if="show" class="w-75 d-flex flex-wrap justify-content-center">
+                <div v-if="show" class="w-md-75 w-sm-100 d-flex flex-wrap justify-content-center">
                   <div v-for="produtos in projetos" :key="produtos.id">
                       <div v-if="produtos.categoria !== 'Html'" class="cards">
                         <div class="card">
