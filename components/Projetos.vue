@@ -1,14 +1,46 @@
 <template>
-  <section id="Projetos" class="text-center" data-aos="fade-right" data-aos-duration="1500">
+  <section id="Projetos" class="text-center" data-aos="fade-right" data-aos-duration="2900">
     <h2 class="title">Projetos</h2>
     <article>
-        <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="_blank">Github</a></p>
-        <span>/*Passe o mouse nos cards e veja a mágica acontecer*/</span>
+       <div class="d-flex flex-column">
+          <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="_blank">Github</a></p>
+          <span>/*Passe o mouse nos cards e veja a mágica acontecer*/</span>
+          <label for="" class="text-dark">
+            tecnologias:
+            <input list="techs" v-model="search" class="input-filter text-white" placeholder="Search">
+            <datalist id="techs">
+                <option value="HTML">HTML</option>
+                <option value="React">React</option>
+                <option value="Vue">Vue</option>
+            </datalist>
+          </label>
+       </div>
+      
         <div class=" d-flex flex-column justify-content-center align-items-center">
+           <div v-if="search !== '' " class="d-flex">
+            <div v-for="filter in filteredProjects" :key="filter.id">
+               <div class="cards">
+                  <div class="card">
+                    <img :src="filter.imagem" class="img" :alt="filter.descricao">
+                  </div>
+                  <div class="texto d-flex flex-column justify-content-center align-items-center">
+                      <p class="text">{{filter.descricao}}</p>
+                  <div>
+                    <b-button class="btn-link" variant="primary">
+                      <a :href="filter.repo" target="_blank">Repositorio</a>
+                    </b-button>
+                    <b-button class="btn-link" variant="primary">
+                      <a :href="filter.site" target="_blank">Site ativo</a>
+                      </b-button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+           </div>
 
-            <div class="d-flex flex-wrap justify-content-center">
+            <div v-if="search === '' " class="d-flex flex-wrap justify-content-center">
                 <div v-for="produtos in projetos" :key="produtos.id">
-                  <div v-if="produtos.categoria == 'Html'" class="cards">
+                  <div v-if="produtos.categoria == 'HTML'" class="cards">
                       <div class="card">
                         <img :src="produtos.imagem" class="img" alt="">
                       </div>
@@ -28,9 +60,9 @@
             </div>
 
             <transition name="slide">
-                <div v-if="show" class="w-md-75 w-sm-100 d-flex flex-wrap justify-content-center">
+                <div v-if="show" class="size-projects d-flex flex-wrap justify-content-center">
                   <div v-for="produtos in projetos" :key="produtos.id">
-                      <div v-if="produtos.categoria !== 'Html'" class="cards">
+                      <div v-if="produtos.categoria !== 'HTML'" class="cards">
                         <div class="card">
                           <img :src="produtos.imagem" class="img" alt="">
                         </div>
@@ -57,7 +89,7 @@
          
         
 
-        <b-button @click="show = !show" class="btn-body w-25 mt-5 btn" variant="primary">{{show? 'Ver menos': 'Ver mais'}}</b-button>
+        <b-button v-if="search === '' " @click="show = !show" class="btn-body w-25 mt-5 btn" variant="primary">{{show? 'Ver menos': 'Ver mais'}}</b-button>
     </article>
   </section>
 </template>
@@ -68,18 +100,24 @@ export default {
      data(){
         return{
           projetos: [],
-          show: false
+          show: false,
+          search: "",
         }
      },
      methods:{
         fetchData(){
             this.projetos = Projetos
-        }
+        },
      },
      created(){
          this.fetchData()
-        
-    },
+     },
+     computed:{
+        filteredProjects(){
+           let filtered = this.projetos.filter(projeto=> projeto.categoria.toLowerCase().includes(this.search.toLowerCase()))
+           return filtered
+        }
+     }
 }
 </script>
 
@@ -146,6 +184,22 @@ export default {
  .slide-enter-active {
   animation: bounce-in 0.5s;
 }
+.size-projects{
+  width: 75%;
+}
+.input-filter{
+  outline: none;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #585858;
+}
+.input-filter::-webikit-calendar-picker-indication{
+   display: none;
+}
+input::-webkit-calendar-picker-indicator{
+  display: none !important; 
+} 
 @keyframes bounce-in {
   0% {
     transform: scale(0);
@@ -166,6 +220,12 @@ export default {
 .slide-leave-to {
   transform: translateX(20px);
   opacity: 0;
+}
+
+@media (max-width: 992px) {
+  .size-projects{
+    width: 100%;
+  }
 }
 
 </style>

@@ -3,7 +3,7 @@
          {
             "id": 1,
             "imagem": "/images/spotify.jpg",
-            "categoria": "Html",
+            "categoria": "HTML",
             "repo":"https://github.com/Carloss0002/spotify",
             "site": "https://spotify-flax-chi.vercel.app/",
             "descricao":"Clone do Spotify, página principal, utilizando Html e Css."
@@ -11,7 +11,7 @@
          {
             "id": 2,
             "imagem": "/images/formulario.jpg",
-            "categoria":"Html",
+            "categoria":"HTML",
             "descricao":"Página formulário desafio do frontend Mentor, formulário baseado na vida real.",
             "repo":"https://github.com/Carloss0002/sign-up-form",
             "site": "https://sign-up-form-seven.vercel.app/"
@@ -19,7 +19,7 @@
          {
             "id": 3,
             "imagem": "/images/easybank.jpg",
-            "categoria":"Html",
+            "categoria":"HTML",
             "descricao": "Landing page com design responsivo feito em Html Css e JavaScript",
             "repo":"https://github.com/Carloss0002/landing-page",
             "site": "https://landing-page-teal-tau.vercel.app/"
@@ -27,7 +27,7 @@
          {
             "id": 4,
             "imagem":"/images/random.jpg",
-            "categoria":"vue",
+            "categoria":"VUE",
             "descricao": "Rede fictícia criada com Vue.js, Firebase e utilizando o localStorage.",
             "repo": "https://github.com/Carloss0002/Social",
             "render": true,
@@ -36,7 +36,7 @@
          {
             "id": 7,
             "imagem": "/images/movie.jpg",
-            "categoria": "react",
+            "categoria": "REACT",
             "repo": "https://github.com/Carloss0002/movies",
             "site": "https://the-awesome-carloss0002-site.netlify.app/",
             "descricao": "Projeto consumindo api IMDB"
@@ -44,7 +44,7 @@
          {
             "id": 8,
             "imagem": "/images/jobs_search.jpg",
-            "categoria": "react",
+            "categoria": "REACT",
             "descricao": "Projeto feito em react consumindo adzuna api onde o user pode procurar vagas",
             "repo": "https://github.com/Carloss0002/search-job",
             "site": "https://the-awesome-carloss0002-site.netlify.app/"
@@ -52,8 +52,8 @@
          {
             "id": 9,
             "imagem": "/images/desktop-image.jpg",
-            "categoria": "react",
-            "descricao":"PRojeto baseado no kanban do github, feito em react",
+            "categoria": "REACT",
+            "descricao":"Projeto baseado no kanban do github, feito em react",
             "repo": "https://github.com/Carloss0002/Sistema",
             "site":"https://632bbe57ab905e1f7f87bd1f--the-great-carloss0002-site.netlify.app/"
          }

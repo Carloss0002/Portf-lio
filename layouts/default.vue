@@ -40,32 +40,27 @@
     <div class="container-fluid-lg">
         <Nuxt/>
     </div>
-    <footer class="w-100 py-3">
-        <div>
-            <p>&copy; Carlos Eduardo</p>
+    <footer class="w-100 py-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="d-flex">
+            <a href="#Home">Home</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projetos">Projetos</a>
+            <a href="#Sobre">Sobre mim</a>
+            <a href="#Contatos">Contato</a>
         </div>
-        <div>
-            <p>Contatos</p>
-            <ul>
-                <li>
-                    <a href="" target="_blanck">
-                        <b-icon icon="linkedin" font-scale="1" variant="light"></b-icon>
-                        Linkdedin
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:carlosseduardo003@hotmail.com" target="_blanck">
-                        <b-icon icon="voicemail" font-scale="2" variant="light"></b-icon>
-                        Email
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/5577988592487" target="_blanck">
-                      <b-icon icon="whatsapp" font-scale="1"></b-icon>
-                      Whatsapp
-                    </a>
-                </li>
-            </ul>
+        <div class="mt-3">
+            <a   href="https://wa.me/5577988592487" target="_blank">
+                 <b-icon icon="whatsapp" font-scale="1"></b-icon>
+            </a>
+            <a  href="https://www.linkedin.com/in/carlos-eduardo002/" target="_blank">
+                <b-icon icon="linkedin" font-scale="1"></b-icon>
+            </a>
+            <a href="mailto:carlosseduardo003@hotmail.com" target="_blank">
+              <b-icon icon="voicemail" font-scale="1" variant="light"></b-icon>
+            </a>
+            <a  href="https://github.com/Carloss0002" target="_blank">
+                <b-icon icon="github" font-scale="1" variant="light"></b-icon>
+            </a>
         </div>
     </footer>
   </div>
@@ -114,6 +109,10 @@
         background: #1f1f1f;
         margin-bottom: -10px;
     }
+    footer div a{
+        margin-left: 15px;
+    }
+
     @media (max-width: 992px) {
         a{
             font-size: 8px;

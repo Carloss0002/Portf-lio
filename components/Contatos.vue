@@ -6,13 +6,13 @@
                 <p class="text w-75 mb-4">Se gostou do meu trabalho entre em contato nas seguintes redes</p> 
                  <small>Clique em um dos icones para acessar as redes</small>
                 <div class="w-25 d-flex justify-content-md-around  mt-5 div-buttons">
-                   <a href="https://www.linkedin.com/in/carlos-eduardo002/" target="blank">
+                   <a href="https://www.linkedin.com/in/carlos-eduardo002/" target="_blank">
                     <b-icon icon="linkedin" font-scale="2" variant="light"></b-icon>
                    </a>
-                   <a href="https://github.com/Carloss0002" target="blank">
+                   <a href="https://github.com/Carloss0002" target="_blank">
                      <b-icon icon="github" font-scale="2" variant="light"></b-icon>
                    </a>
-                   <a href="mailto:carlosseduardo003@hotmail.com" target="blank">
+                   <a href="mailto:carlosseduardo003@hotmail.com" target="_blank">
                     <b-icon icon="voicemail" font-scale="2" variant="light"></b-icon>
                    </a>
                 </div>

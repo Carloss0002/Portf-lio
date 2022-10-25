@@ -4,15 +4,15 @@
       <article class="d-flex flex-row-reverse flex-wrap-reverse justify-content-around" name="página principal">
 
          <div class="align-self-center">
-            <p class="title-element for-sm-el d-md-block d-sm-none">Olá,</p>
-            <h1 class="title-home title-element my-auto mb-5 animation pr-1"><span class="d-md-none d-sm-inline-block">Olá,</span> eu sou Carlos Eduardo!</h1>
+            <p class="title-element for-sm-el d-md-block d-none">Olá,</p>
+            <h1 class="title-home title-element my-auto mb-5 animation pr-1"><span class="d-md-none d-sm-block">Olá,</span> eu sou Carlos Eduardo!</h1>
             <p class="subtitle  mb-4 mt-4 font-weight-light" name="Desenvolvedor web Front end">Desenvolvedor Web Front end</p> 
             <div class="d-flex justify-content-around mt-md-4">
-               <b-button class="btn d-flex justify-content-center align-items-center" size="sm" variant="outline-success" href="https://wa.me/5577988592487" target="_blank">
+               <b-button class="btn d-flex justify-content-center align-items-center blob" size="sm" variant="outline-success" href="https://wa.me/5577988592487" target="_blank">
                  <b-icon icon="whatsapp" font-scale="1"></b-icon>
                   <span class="ml-2">Whatsapp</span>
                </b-button>
-               <b-button class="btn d-flex justify-content-center align-items-center " size="sm" variant="outline-primary" href="https://www.linkedin.com/in/carlos-eduardo002/" target="_blank">
+               <b-button class="btn d-flex justify-content-center align-items-center linkedin-blob" size="sm" variant="outline-primary" href="https://www.linkedin.com/in/carlos-eduardo002/" target="_blank">
                   <b-icon icon="linkedin" font-scale="1"></b-icon>
                   <span class="ml-2">Linkedin</span>
                </b-button>
@@ -57,6 +57,15 @@ export default {
       font: lighter 2rem 'Prata', serif;
       color: #7B797B;
     }
+    .blob {
+      box-shadow: 0 0 0 0 rgba(51, 217, 178, 1);
+      transform: scale(1);
+      animation: pulse-green 6s infinite;
+      }
+     .linkedin-blob{
+        box-shadow: 0 0 0 0 rgb(14, 120, 170, 1);
+        animation: pulse-blue 6s infinite;
+     } 
     @keyframes text-animation{
       from{
          width: 0;
@@ -72,6 +81,37 @@ export default {
       }
       to{
          border-right-color: transparent;
+      }
+    }
+    @keyframes pulse-green {
+      0% {
+         transform: scale(0.95);
+         box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+      }
+      
+      70% {
+         transform: scale(1);
+         box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+      }
+       100% {
+         transform: scale(0.95);
+         box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+      }
+    }
+    @keyframes pulse-blue {
+      0% {
+         transform: scale(0.95);
+         box-shadow: 0 0 0 0 rgba(14, 120, 170, 0.7);
+      }
+      
+      70% {
+         transform: scale(1);
+         box-shadow: 0 0 0 10px rgba(14, 120, 170, 0);
+      }
+      
+      100% {
+         transform: scale(0.95);
+         box-shadow: 0 0 0 0 rgba(14, 120, 170, 0);
       }
     }
     @media (max-width: 992px){
