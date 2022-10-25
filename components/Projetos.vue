@@ -5,19 +5,16 @@
        <div class="d-flex flex-column">
           <p id="subtitle-projetos" class="subtitle">Alguns Projetos e desafios, você pode encontrar muito mais no meu <a href="" target="_blank">Github</a></p>
           <span>/*Passe o mouse nos cards e veja a mágica acontecer*/</span>
-          <label for="" class="text-dark">
+          <label for="select" class="text-dark">
             tecnologias:
-            <input list="techs" v-model="search" class="input-filter text-white" placeholder="Search">
-            <datalist id="techs">
-                <option value="HTML">HTML</option>
-                <option value="React">React</option>
-                <option value="Vue">Vue</option>
-            </datalist>
+            <select class="input-filter text-white" v-model="search" name="" id="select">
+                <option v-for="option in options" :value="option" :key="option">{{option}}</option>
+            </select>
           </label>
        </div>
       
-        <div class=" d-flex flex-column justify-content-center align-items-center">
-           <div v-if="search !== '' " class="d-flex">
+        <div class=" d-flex flex-wrap justify-content-center">
+           <div v-if="search !== '' " class="d-flex flex-wrap">
             <div v-for="filter in filteredProjects" :key="filter.id">
                <div class="cards">
                   <div class="card">
@@ -102,6 +99,11 @@ export default {
           projetos: [],
           show: false,
           search: "",
+          options:[
+              'HTML',
+               'VUE',
+               'REACT'
+          ]
         }
      },
      methods:{
