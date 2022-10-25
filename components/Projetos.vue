@@ -8,6 +8,7 @@
           <label for="select" class="text-dark">
             tecnologias:
             <select class="input-filter text-white" v-model="search" name="" id="select">
+                <option  disabled selected>select a technology</option>
                 <option v-for="option in options" :value="option" :key="option">{{option}}</option>
             </select>
           </label>
@@ -196,12 +197,6 @@ export default {
   border-radius: 5px;
   background: #585858;
 }
-.input-filter::-webikit-calendar-picker-indication{
-   display: none;
-}
-input::-webkit-calendar-picker-indicator{
-  display: none !important; 
-} 
 @keyframes bounce-in {
   0% {
     transform: scale(0);
